@@ -1,5 +1,6 @@
 //import logo from "./logo.svg";
-import "./Weather.css";
+import React from "react";
+
 import Weather from "./Weather";
 
 function App() {

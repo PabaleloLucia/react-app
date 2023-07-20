@@ -1,26 +1,6 @@
-:root {
-  --body-bg: #f5f5f5;
-  --card-bg: #e0e0e0;
-  --container-bg: #e0e0e0;
-  --the-app-bg: #e0e0e0;
-  --card-bd-col: #bdbdbd;
-  --container-bd-col: #bdbdbd;
-  --text-color: #252525;
-}
-.dark_mode {
-  --body-bg: #252525;
-  --card-bg: #555;
-  --container-bg: #555;
-  --the-app-bg: #555;
-  --card-bd-col: #212121;
-  --container-bd-col: #212121;
-  --text-color: #f5f5f5;
-}
-
-body {
+.body {
   margin: 0;
   background: var(--body-bg);
-  display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
