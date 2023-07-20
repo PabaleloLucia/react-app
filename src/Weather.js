@@ -5,105 +5,94 @@ export default function Weather() {
     <div class="card">
       <div class="container">
         <div class="wrapper">
-          <div className="the-app">
+          <div class="the-app">
             <form
-              className="row row-cols-lg-auto g-3 align-items-center mb-4"
+              class="row row-cols-lg-auto g-3 align-items-center mb-4"
               id="city-form"
             >
-              <div className="col-6">
+              <div class="col-12">
                 <input
                   type="search"
                   autocomplete="off"
                   autofocus="on"
-                  className="form-control"
+                  class="form-control"
                   id="cityWeatherForecast"
                   placeholder="Enter city name"
                 />
               </div>
-              <div className="col-3">
+              <div class="col-12">
                 <input
                   type="submit"
                   value="Search"
-                  className="btn btn-outline-secondary w-100"
+                  class="btn btn-outline-secondary w-100"
                 />
               </div>
-              <div className="col-3">
+              <div class="col-12">
                 <input
                   type="submit"
                   value="Current"
                   id="current-location"
-                  className="btn btn-outline-secondary w-100"
+                  class="btn btn-outline-secondary w-100"
                 />
+              </div>
+              <div class="col-12">
+                <span id="theme_toggler"> Change theme </span>
               </div>
             </form>
 
-            <div className="weather">
-              <h1 id="city">Gaborone</h1>
+            <div class="weather">
+              <h1 id="city"></h1>
               <ul>
                 <li>
-                  Today: <span id="date"> 13:00</span>
+                  Today: <span id="date"></span>
                 </li>
-                <li id="description"> windy</li>
+                <li id="description"></li>
               </ul>
             </div>
-            <div className="row">
-              <div className="col-6">
-                <div className="clearfix temp">
-                  <i class="fa-solid fa-wind"></i>
-                  <div className="float-left">
-                    <strong id="temperature">12</strong>
-                    <span className="weather-units">
-                      <button
-                        type="button"
-                        className="btn btn-link focus"
-                        id="key2"
-                      >
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix temp">
+                  <img src="" alt="clear" id="icon" class="float-left" />
+                  <div class="float-left">
+                    <strong id="temperature"></strong>
+                    <span class="weather-units">
+                      <a href="#" tabindex="1" class="focus" id="key2">
                         ℃
-                      </button>{" "}
+                      </a>{" "}
                       |
-                      <button type="button" className="btn btn-link " id="key">
+                      <a href="#" tabindex="1" class="pointer" id="key">
                         ℉
-                      </button>
+                      </a>
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div class="col-6">
                 <ul>
                   <li>
-                    Humidity: <span id="humidity">3</span>%
+                    Humidity: <span id="humidity"></span>%
                   </li>
                   <li>
-                    Wind: <span id="wind">21</span>km/h
+                    Wind: <span id="wind"></span>km/h
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="app-forecast" id="weather-forecast"></div>
+            <div class="app-forecast" id="weather-forecast"></div>
           </div>
-
           <small>
             Open Source Code on
-            <button
+            <a
               href="https://github.com/PabaleloLucia/My-Project.git"
-              type="button"
-              title="Project on GitHub"
               target="_blank"
-              className="btn btn-link "
+              title="Project on GitHub"
             >
               <i class="fa-brands fa-github"></i>
-            </button>
+            </a>
             by
-            <button
-              href="mailto:pabalelotsebempe@gmail.com"
-              type="button"
-              target="_blank"
-              className="btn btn-link "
-              title="email me"
-            >
+            <a href="mailto:pabalelotsebempe@gmail.com" target="_blank">
               Pabalelo Tsebempe
-            </button>
-            <span id="theme_toggler"> Change theme </span>
+            </a>
           </small>
         </div>
       </div>
