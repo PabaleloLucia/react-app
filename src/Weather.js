@@ -7,8 +7,8 @@ export default function Weather() {
     temperature: 19,
     date: "Tuesday",
     time: "11:00",
-    description: "Windy",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/windy.png",
+    description: "Cloudy",
+    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
     humidity: 80,
     wind: 10,
   };
