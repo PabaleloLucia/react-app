@@ -8,14 +8,14 @@ export default function Weather() {
     date: "Tuesday",
     time: "11:00",
     description: "Cloudy",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
+    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
     humidity: 80,
     wind: 10,
   };
 
   return (
-    <div className="container">
-      <div className="weather">
+    <div className="weather">
+      <div className="container">
         <form>
           <div className="row">
             <div className="col-6">
